@@ -25,8 +25,8 @@ tasks.withType(JavaCompile) {
 }
 
 application {
-    mainModule = 'org.example.birdsenger'
-    mainClass = 'org.example.birdsenger.HelloApplication'
+    mainModule = 'org.example.demo11'
+    mainClass = 'org.example.demo11.HelloApplication'
 }
 
 javafx {
@@ -40,6 +40,9 @@ dependencies {
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+    implementation "org.xerial:sqlite-jdbc:3.50.3.0"
+    implementation "org.mindrot:jbcrypt:0.4"
 }
 
 test {
